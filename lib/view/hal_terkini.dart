@@ -6,7 +6,9 @@ class Terkini extends StatefulWidget {
   _TerkiniState createState() => _TerkiniState();
 }
 
+
 class _TerkiniState extends State<Terkini> {
+  
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;

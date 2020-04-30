@@ -29,7 +29,17 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: new Text('IFloodBrebes'),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Colors.blue,
+                Colors.lightBlueAccent,
+              ])
+          ),
+        ),
         actions: <Widget>[
            IconButton(
             icon: Icon(Icons.notifications),onPressed: (){

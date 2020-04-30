@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:ui' as ui;
 import 'dart:core';
 
 class CircularProgressb extends StatefulWidget {
@@ -23,7 +22,6 @@ class _CircularProgressb extends State<CircularProgressb>
 
   @override
   void initState() {
-    // TODO: implement initState
     controller = new AnimationController(
         vsync: this, duration: const Duration(milliseconds: 10000))
       ..repeat();
@@ -31,6 +29,13 @@ class _CircularProgressb extends State<CircularProgressb>
     controller.addListener(() {
       setState(() {});
     });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   @override

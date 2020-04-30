@@ -15,7 +15,17 @@ class _RiwayatState extends State<Riwayat> {
       body: Container(
         child: new Column(
           children: <Widget>[
-            Text('frgtftgt')
+            Card(
+              semanticContainer: true,
+              color: Colors.black,
+              clipBehavior: Clip.antiAliasWithSaveLayer,
+              shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              ),
+              elevation: 5,
+              margin: EdgeInsets.all(10),),
+            Text('frgtftgt'),
+            Text('njnjbjbj'),
           ],
         ),
       ),
