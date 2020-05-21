@@ -51,6 +51,7 @@ class _TerkiniState extends State<Terkini> {
                       color: Colors.lightBlue,
                       child: Text("SUNGAI"),
                       onPressed: () {
+                        
                         print("Klik");
                       }),
                     RaisedButton(

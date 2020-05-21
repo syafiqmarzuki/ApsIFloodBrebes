@@ -9,15 +9,19 @@ class Notifikasi extends StatefulWidget {
 
 class _NotifikasiState extends State<Notifikasi> {
   @override
-
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
         title: Text("Notifikasi"),
         ),
-        body: Container(
-          child: ListView.builder(
-                    itemCount: 20,
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Container(
+                  child: ListView.builder(
+                    itemCount: 3,
                     itemBuilder: (context,index){
                       return ListTile(
                         title: Text('35 CM'),
@@ -25,12 +29,11 @@ class _NotifikasiState extends State<Notifikasi> {
                         trailing: Text('12-12-2020 : 14:00'),
                       );
                     },
+                  ),
+                ),)
+            ],
           ),
-          
-            
-          
         )
-                
       
     );
   }
