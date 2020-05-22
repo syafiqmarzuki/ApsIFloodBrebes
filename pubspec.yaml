@@ -25,6 +25,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
   http: ^0.12.0+2
+  pusher_websocket_flutter: ^0.2.0
   shared_preferences: ^0.5.3+4
   toast: ^0.1.5
   retrofit: 0.6.0
@@ -56,6 +57,8 @@ flutter:
   assets:
    - assets/img/logokecil.png
    - assets/img/sungai.jpg
+   - assets/img/logob.png
+   - assets/img/logokabbrebes.png
 
   #  - images/a_dot_ham.jpeg
 

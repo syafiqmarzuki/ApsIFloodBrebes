@@ -57,7 +57,7 @@ class _CircularProgressb extends State<CircularProgressb>
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
-                Text('166',
+                Text('39,9',
                     style: new TextStyle(
                         color: Colors.white,
                         fontSize: widget.size / 4.1,
